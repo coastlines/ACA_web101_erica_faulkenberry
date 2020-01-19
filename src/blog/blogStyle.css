@@ -94,7 +94,7 @@ nav {
     justify-content: space-between;
 }
 
-.logo-container {
+.logo-container > .logo {
     width: 30px;
     height: 30px;
    /* padding-right: 120px; */
@@ -189,6 +189,7 @@ footer {
     font-size: 11px;
 }
 
+
 @media only screen and (max-width: 700px) {
     
     .header-container, .nav-container {
@@ -209,10 +210,10 @@ footer {
 
   }
 
-@media only screen and (max-width: 440px) {
+  @media only screen and (max-width: 440px) {
     
-    header, .inner-nav-container{
-      display: none;
+    header, .inner-nav-container {
+      visibility: hidden;
     }
 
     .nav-container {
@@ -220,3 +221,5 @@ footer {
     }
 
   }
+
+  
