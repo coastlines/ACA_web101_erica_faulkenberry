@@ -214,6 +214,7 @@ footer {
     
     header, .inner-nav-container {
       visibility: hidden;
+      display: none;
     }
 
     .nav-container {
