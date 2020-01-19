@@ -2,76 +2,14 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0 auto;
-    font-size: 13px;
+    font-size: 11px;
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: navy; 
+.main-container {
+    margin: 0 auto;
 }
 
-.header-container {
-    padding: .5% 30%;
-    max-width: 800px;
-}
-
-.header-container > a {
-    color: white;
-    padding: 5px;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-
-.header-container > i {
-    color: white;
-    padding: 0px;
-    margin: 0;
-    font-size: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    text-transform: uppercase;
-}
-
-.nav-container {
-    max-width: 900px;
-    padding: 0% 30%;
-}
-
- .nav-container > .logo {
-    height: 100%;
-    width: 30px;
-    padding-right: 120px;
-    vertical-align: middle;
-}
-
-.nav-container > a {
-    color: darkgray;
-    text-decoration: none;
-    padding: 4px;
-    margin-top: 2px;
-}
-
-.nav-container > button {
-    background-color: orange;
-    color: white;
-    text-transform: uppercase;
-    font-size: .9em;
-    font-weight: bold;
-    border: none;
-    height: 100%;
-    padding: 10px;
-}
-
-button:hover {
-    background-color: darkgray;
-}
-
+/*** FONTS ***/
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Helvetica Neue', sans-serif;
@@ -79,24 +17,114 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize; 
 }
 
- .bold-h {
+.bold-h {
     font-weight: bold;
 }
 
-h1, h2, h3 {
+h1, h2 {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-h5 {
-    margin-top: 2px;
-    margin-bottom: 8px; 
+h4, h5 {
+    margin-top: 5px;
+    margin-bottom: 0px; 
 }
 
-h4,h6 {
-    margin-top: 0px;
-    margin-bottom: 2px;
+h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
+p {
+    margin-top: 7px;
+    margin-bottom: 0px; 
+}
+
+/*** HEADER & NAV ***/
+
+header, nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+.header-container, .nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    max-width: 700px;  
+}
+
+/*** HEADER ***/
+
+header {
+    background-color: #004667;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.header-container > a {
+    color: white;
+    padding: 6px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.header-container > i {
+    color: white;
+    padding-left: 10px;
+    margin: 0;
+    font-size: 9px;
+    vertical-align: baseline;
+}
+
+/*** NAV ***/
+
+nav {
+    text-transform: uppercase;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    width: 30px;
+    height: 30px;
+   /* padding-right: 120px; */
+    vertical-align: middle;
+    display: flex;
+}
+
+.inner-nav-container > a {
+    color: darkgray;
+    text-decoration: none;
+    padding: 4px;
+    margin-top: 2px;
+}
+
+.inner-nav-container > button {
+    background-color: #F8B232;
+    color: white;
+    text-transform: uppercase;
+    font-size: .95em;
+    font-weight: bold;
+    border: none;
+    height: 100%;
+    padding: 15px;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+/*** MAIN ***/
 
 main {
     background-color: #eee;
@@ -114,10 +142,13 @@ article {
     background-color: white;
 }
 
+/*** FOOTER ***/
+
 footer {
     max-width: 300px;
     margin: 0 auto;
     padding: 10px;
+    font-weight: lighter;
 }
 
 .footer-container{
@@ -130,7 +161,7 @@ footer {
  .footer-container a {
     text-decoration: none;
     text-transform: uppercase;
-    color: orange;
+    color: #F8B232;
 }
 
 .footer-container .social-icons {
@@ -138,11 +169,11 @@ footer {
     justify-content: space-around;
     align-content: center;
     width: 100%;
-    padding: 20px 70px 10px 70px;
+    padding: 15px 70px 10px 70px;
 }
 
 .fab {
-    color: orange;
+    color: #F8B232;
     font-size: 18px;
 }
 
@@ -157,3 +188,35 @@ footer {
     text-align: center;
     font-size: 11px;
 }
+
+@media only screen and (max-width: 700px) {
+    
+    .header-container, .nav-container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .main-container {
+        padding: none;
+        margin: none;
+    }
+
+    main {
+        padding-left: 20px;
+        padding-right: 40px;
+        margin: 0 auto;
+    }
+
+  }
+
+@media only screen and (max-width: 440px) {
+    
+    header, .inner-nav-container{
+      display: none;
+    }
+
+    .nav-container {
+        padding: 5px 20px;
+    }
+
+  }
