@@ -1,6 +1,7 @@
 body {
-   background-color: #F2F2F2;
+   background-color: #D4EDF4;
    padding: 0% 10%;
+   
 }
 
 .container {
@@ -11,7 +12,7 @@ h1, h2, h3, h4, h5, h6, nav a, p {
     font-family: orpheuspro, serif;
     font-weight: 700;
     font-style: normal;
-    color: #0511F2;
+    color: #1700FF;
 }
 
 header h1 {
@@ -29,6 +30,7 @@ nav .inner-container {
 nav a {
     text-decoration: none;
     font-size: 1.3em;
+    padding: .25em .5em;
 }
 
 nav a span {
@@ -40,38 +42,35 @@ nav a:hover {
     text-decoration: none;
     font-size: 1.3em;
     background-color: #8D9CF2;
-    box-shadow: 5px 5px #0511F2;
+    box-shadow: 5px 5px #1700FF;
 }
-
-img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    box-shadow: 15px 15px #8D9CF2;
-}
-
 
 #about .container {
     display: flex;
     justify-content: center;
-    padding: 5% 10%;
     align-items: center;
-   
+    padding: 20px 100px;
 }
 
-#about .container .item, #about .inner-container .item {
+#about .inner-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    border: pink solid 2px;
+    flex-basis: 50%; 
+}
+
+#about img {
+    width: 60%;
+    height: auto;
+    padding: 15px;
+    background-color: orange;
+    box-shadow: 15px 15px #5A5DFF;
+}
+
+
+#work .inner-container {
+    display: flex;
+    justify-content: space-around;
     flex-flow: row wrap;
 }
-
-#about .item p {
-    align-self: flex-end;
-}
-
-#about .inner-container .item {
-    padding: 5%;
-    display: flex;
-    justify-items: ;
-}
-
