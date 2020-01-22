@@ -3,8 +3,8 @@ body {
 }
 
 .container {
-    border: 1px solid #8D9CF2;
-    padding: 0px 10px;
+    border: 1px solid #1700FF;
+    padding: 0px;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -90,13 +90,77 @@ nav a:hover {
 
 #about img {
     width: 100%;
-    max-width: 250px;
-    box-shadow: 15px 15px #5A5DFF;
+    max-width: 200px;
 }
 
 /*** WORK ***/
+#work {
+    padding: 60px 0px;
+}
+
+#work .container {
+    box-shadow: 5px 5px #1700FF;
+    max-width: 400px;
+}
+
 #work .inner-container {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
+}
+
+#work h2 {
+    border-bottom: 1px solid #1700FF;
+    margin: 0 auto;
+    padding: none;
+    text-align: center;
+}
+
+
+/*** Contact ***/
+#contact {
+    padding: 60px 0px;
+}
+
+#contact .container {
+    box-shadow: 5px 5px #1700FF;
+    max-width: 400px;
+}
+
+#contact .container > * {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact h2 {
+    border-bottom: 1px solid #1700FF;
+    padding: none;
+    text-align: center;
+}
+
+
+input {
+    background-color: transparent;
+}
+
+#contact [for='email'] {
+    border: none;
+    border-bottom: 1px dashed #1700FF;
+    color: yellow;
+    margin-bottom: 10px;
+    width: 93%;
+}
+
+ [for='submit'] {
+    border: 1px solid #1700FF;
+    color: #1700FF;
+    border-radius: 2px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
