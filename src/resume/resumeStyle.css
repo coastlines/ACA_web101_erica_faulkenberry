@@ -1,30 +1,45 @@
 body {
-   background-color: #D4EDF4;
-   padding: 0% 10%;
-   
+   background-color: #D4EDF4; 
 }
 
 .container {
     border: 1px solid #8D9CF2;
+    padding: 0px 10px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6, nav a, p {
+section {
+    border: yellow 4px solid;
+}
+
+h1, h2, h3, h4, h5, h6, nav a {
     font-family: orpheuspro, serif;
     font-weight: 700;
     font-style: normal;
     color: #1700FF;
 }
 
-header h1 {
-    display: inline-flex;
-    align-items: space-between;
+p {
+    font-family: odisseia, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1700FF;
+    font-size: 12px;
+    
 }
 
+/*** NAV ***/
 
-nav .inner-container {
+nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+h1.header-item {
+    flex-grow: 1;
 }
 
 nav a {
@@ -45,30 +60,41 @@ nav a:hover {
     box-shadow: 5px 5px #1700FF;
 }
 
+/*** ABOUT ***/
+
 #about .container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px 100px;
+    border: green 1px solid;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-#about .inner-container {
+#about .container > *  {
+    flex: 1;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    line-height: 1.2em;
+}
+
+/** #about .inner-container {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
     border: pink solid 2px;
-    flex-basis: 50%; 
-}
+    flex-basis: 50%;
+    align-items: flex-start;
+} **/
 
 #about img {
-    width: 60%;
-    height: auto;
-    padding: 15px;
-    background-color: orange;
+    width: 100%;
+    max-width: 250px;
     box-shadow: 15px 15px #5A5DFF;
 }
 
-
+/*** WORK ***/
 #work .inner-container {
     display: flex;
     justify-content: space-around;
