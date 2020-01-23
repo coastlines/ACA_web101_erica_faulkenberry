@@ -48,6 +48,9 @@ nav {
     align-items: center;
     flex-flow: row wrap;
 }
+header h1 {
+    font-size: 1.3em;
+}
 
 h1.header-item {
     flex-grow: 1;
@@ -66,7 +69,7 @@ nav a span {
 
 nav a:hover {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.2em;
     background-color: #8D9CF2;
     box-shadow: 5px 5px #1700FF;
     color: white;
@@ -115,6 +118,7 @@ nav a:hover {
     box-shadow: 5px 5px #1700FF;
     max-width: 600px;
     border: 1px solid #1700FF;
+    padding: 0;
 }
 
 #skills .inner-container {
@@ -122,6 +126,7 @@ nav a:hover {
     justify-content: space-around;
     flex-flow: row wrap;
 }
+
 
 #skills h2 {
     border-bottom: 1px solid #1700FF;
@@ -133,7 +138,17 @@ nav a:hover {
 .skill-container {
     padding: 20px;
     text-align: center;
+    
 }
+
+.fas:hover, .skill-container p:hover {
+    color: rgb(255, 185, 135);
+}
+
+.skill-container p:hover {
+    background-color: green;
+}
+
 
 /*** Process ***/
 
@@ -149,6 +164,20 @@ nav a:hover {
 #experience {
     padding-left: 10%;
 }
+
+#experience .container {
+    max-width: 600px;
+}
+
+#experience h4 {
+    display: inline-flex;
+}
+
+.experience-years {
+    margin-left: 35%;
+    justify-self: flex-end;
+}
+
 
 /*** Education ***/
 
@@ -171,6 +200,7 @@ nav a:hover {
     box-shadow: 5px 5px #1700FF;
     max-width: 400px;
     border: 1px solid #1700FF;
+    padding: 0;
 }
 
 #contact .container > * {
@@ -196,7 +226,7 @@ input {
     border-bottom: 1px dashed #1700FF;
     color: yellow;
     margin: 20px 0px 40px 0px;
-    width: 93%;
+    width: 89%;
 }
 
  [for='submit'] {
