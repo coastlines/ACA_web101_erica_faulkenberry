@@ -1,0 +1,43 @@
+/* Color Theme Swatches in Hex */
+.IWANT-Logos-1-hex { color: #0511F2; }
+.IWANT-Logos-2-hex { color: #0F31F2; }
+.IWANT-Logos-3-hex { color: #4B64F2; }
+.IWANT-Logos-4-hex { color: #8D9CF2; }
+.IWANT-Logos-5-hex { color: #F2F2F2; }
+
+/* Color Theme Swatches in RGBA */
+.IWANT-Logos-1-rgba { color: rgba(5, 17, 242, 1); }
+.IWANT-Logos-2-rgba { color: rgba(15, 49, 242, 1); }
+.IWANT-Logos-3-rgba { color: rgba(75, 100, 242, 1); }
+.IWANT-Logos-4-rgba { color: rgba(141, 156, 242, 1); }
+.IWANT-Logos-5-rgba { color: rgba(242, 242, 242, 1); }
+
+/* Color Theme Swatches in HSLA */
+.IWANT-Logos-1-hsla { color: hsla(236, 95, 48, 1); }
+.IWANT-Logos-2-hsla { color: hsla(231, 89, 50, 1); }
+.IWANT-Logos-3-hsla { color: hsla(231, 86, 62, 1); }
+.IWANT-Logos-4-hsla { color: hsla(231, 79, 75, 1); }
+.IWANT-Logos-5-hsla { color: hsla(0, 0, 94, 1); }
+
+
+
+/* Color Theme Swatches in Hex */
+.situatie-1-1-hex { color: #FC728C; }
+.situatie-1-2-hex { color: #FC728C; }
+.situatie-1-3-hex { color: #5A5DFF; }
+.situatie-1-4-hex { color: #2D3773; }
+.situatie-1-5-hex { color: #FFFFFF; }
+
+/* Color Theme Swatches in RGBA */
+.situatie-1-1-rgba { color: rgba(252, 114, 140, 1); }
+.situatie-1-2-rgba { color: rgba(252, 114, 140, 1); }
+.situatie-1-3-rgba { color: rgba(90, 93, 255, 1); }
+.situatie-1-4-rgba { color: rgba(45, 55, 115, 1); }
+.situatie-1-5-rgba { color: rgba(255, 255, 255, 1); }
+
+/* Color Theme Swatches in HSLA */
+.situatie-1-1-hsla { color: hsla(348, 95, 71, 1); }
+.situatie-1-2-hsla { color: hsla(348, 95, 71, 1); }
+.situatie-1-3-hsla { color: hsla(238, 100, 67, 1); }
+.situatie-1-4-hsla { color: hsla(231, 43, 31, 1); }
+.situatie-1-5-hsla { color: hsla(0, 0, 100, 1); }
