@@ -129,7 +129,7 @@ li {
 footer {
     background: #EDE7D7;
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     text-transform: capitalize;
     color: #BF8339;
 }
@@ -161,6 +161,20 @@ footer a {
 
 
 @media (max-width: 700px) {
+    
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo-container p {
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    .menu-container {
+       padding-bottom: 15px;
+    }
     
     .container {
         flex-wrap: wrap;
