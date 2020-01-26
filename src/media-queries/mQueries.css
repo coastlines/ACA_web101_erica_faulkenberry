@@ -45,23 +45,26 @@ header {
 
 nav {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-end;
     font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.logo-container {
+    flex-grow: 1;
 }
 
 nav p {
-    font-size: 30px;
     font-family: 'Bungee Shade', cursive;
     color: #2D3773;
-    flex-grow: 1;
     text-transform: uppercase;
-    color:
 }
 
 nav a {
-    padding: 10px 30px;
-    color: #2D3773;
+    padding: 10px 15px;
+    color: black;
     text-transform: capitalize;
 }
 
@@ -128,6 +131,7 @@ footer {
     background: #EDE7D7;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding-top: 30px;
     padding-bottom: 10px;
     text-transform: capitalize;
@@ -151,6 +155,20 @@ footer a {
 
 
 @media (max-width: 700px) {
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo-container p {
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    .menu-container {
+       padding-bottom: 15px;
+    }
+    
     .container {
         flex-wrap: wrap;
     }
@@ -164,6 +182,7 @@ footer a {
         padding-right: 0;
     }
 
+    
 }
 
 @media (max-width: 576px) {
@@ -171,4 +190,11 @@ footer a {
         visibility: hidden;
         height: 5em;
     }
+    
+    nav a {
+        padding: 5px 10px 20px 10px;
+        font-size: 18px;
+    }
+
 }
+
