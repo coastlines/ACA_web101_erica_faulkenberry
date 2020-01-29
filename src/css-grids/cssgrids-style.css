@@ -1,11 +1,13 @@
-h1, h2, h3, h4, h5, h6, p, a {
+body {
+    background-image: url(https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-1.2.1&auto=format&fit=crop&w=710&q=80);
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, ul {
     font-family: 'Muli', sans-serif;
 }
 
 
 main.main-container {
-    background: pink;
-    border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 250px 80px 400px 80px 250px 1fr;
     grid-template-rows: repeat(12, 75px);
@@ -27,7 +29,6 @@ main.main-container {
 .greeting {
     grid-column: 4/5;
     grid-row: 1/2;
-    border: 1px solid black;
     display: grid;  
 }
 
@@ -38,17 +39,19 @@ main.main-container {
 /*** CLOCK ***/
 
 .clock {
-    border: 1px solid black;
     grid-column: 4/5;
     grid-row: 3/5;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 86px;
     display: grid;
+    background: #F2C879;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 
 .clock span {
     justify-self: center;
     align-self: center;
+    font-family: 'Orbitron', sans-serif !important;
+    font-size: 86px;
 }
 
 /*** CALENDAR ***/
@@ -60,25 +63,65 @@ main.main-container {
 
 /*** CALCULATOR ***/
 .calculator {
-    border: 1px solid black;
     grid-column: 2/3;
     grid-row: 3/8;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1.5fr repeat(5, 1fr);
+    color: white;
+}
+
+.calc-display {
+    background-color: #734D57;
+    border: none;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: grid;
+}
+
+.calc-display span {
+    justify-self: end;
+    align-self: end;
+    font-size: 2.5em;
+    padding: 0 18px 5px 0;
+
+}
+
+.calculator button {
+    color: white;
+    background: #BF665E;
+    border: none;
+    font-size: 1.5em;
+}
+
+.calc-button-zero {
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+.calculator .calc-funct-column-item {
+    background-color: #BF9278;
 }
 
 /*** TODO ***/
 .todo {
-    border: 1px solid black;
     grid-column: 6/7;
     grid-row: 3/8;
-    display: grid;
+    background: #BF665E;
+    color: white; 
 }
 
 .todo h2 {
-    justify-self: center;
+    font-size: 2.5em;
+    padding-top: 15px;
+    border-bottom: 2px solid #734D57;
 }
 
 .todo ul {
     list-style-type: none;
+    font-size: 1em;
 }
 
 input[type="checkbox"] { 
