@@ -1,3 +1,8 @@
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Muli', sans-serif;
+}
+
+
 main.main-container {
     background: pink;
     border: 1px solid black;
@@ -6,42 +11,80 @@ main.main-container {
     grid-template-rows: repeat(12, 75px);
 }
 
-.image {
+
+
+/**.image {
     border: 1px solid black;
     background: red;
     grid-column: 8/10;
     grid-row: 2/4;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);  
 }
 
+/*** GREETING ***/
 .greeting {
     grid-column: 4/5;
     grid-row: 1/2;
     border: 1px solid black;
+    display: grid;  
 }
+
+.greeting h1 {
+    justify-self: center;
+}
+
+/*** CLOCK ***/
 
 .clock {
     border: 1px solid black;
     grid-column: 4/5;
     grid-row: 3/5;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 86px;
+    display: grid;
 }
 
+.clock span {
+    justify-self: center;
+    align-self: center;
+}
+
+/*** CALENDAR ***/
 .calendar {
     border: 1px solid black;
     grid-column: 4/5;
     grid-row: 6/8;
 }
 
+/*** CALCULATOR ***/
 .calculator {
     border: 1px solid black;
     grid-column: 2/3;
     grid-row: 3/8;
 }
 
+/*** TODO ***/
 .todo {
     border: 1px solid black;
     grid-column: 6/7;
     grid-row: 3/8;
+    display: grid;
+}
+
+.todo h2 {
+    justify-self: center;
+}
+
+.todo ul {
+    list-style-type: none;
+}
+
+input[type="checkbox"] { 
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
 }
