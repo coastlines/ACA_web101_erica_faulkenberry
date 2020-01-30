@@ -5,15 +5,15 @@ body {
     background-position: top;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, span, ul {
+h1, h2, h3, h4, h5, h6, p, a, span, ul, .calendar {
     font-family: 'Muli', sans-serif;
 }
 
 
 main.main-container {
     display: grid;
-    grid-template-columns: 1fr 300px 80px 400px 80px 290px 1fr;
-    grid-template-rows: repeat(12, 75px);
+    grid-template-columns: 1fr 300px 1fr 450px 1fr 290px 1fr;
+    grid-template-rows: 50px repeat(11, 75px);
 }
 
 
@@ -69,19 +69,47 @@ main.main-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    background-color: #BF665E;
 }
 
 .calendar .today {
     grid-row: 1/1;
     grid-column: 1/1;
-    background-color: #F2C879;  
+    background-color: #F2C879; 
+    display: grid;
+    justify-content: center; 
+    align-content: center;
+}
+
+.calendar .today h2 {
+    font-size: 7em;
+    margin: 0;
+    padding: 0;
+}
+
+.today h3 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 8px 0 0 0;
+    justify-self: center;
 }
 
 .calendar .full-calendar {
     grid-row: 1/1;
     grid-column: 2/2;
     background-color: #F2C879;
-    border-left: 5px solid #F2B680;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.month h3 {
+    font-size: 1.5em;
+    padding: 5px 0 0 0;
+    margin: 0;
 }
 
 .day-of-week, .date-grid {
@@ -89,8 +117,18 @@ main.main-container {
     grid-template-columns: repeat(7, 1fr);
 }
 
+.day-of-week {
+    font-size: 1em;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
 .calendar button {
     background: #F2C879;
+    border: transparent;
+    font-size: .9em;
+    font-weight: lighter;
 }
 
 
@@ -114,9 +152,11 @@ grid-column: 2/3;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1.5fr repeat(5, 1fr);
     color: white;
-    border-right: 8px solid #F2C879;
-    border-left: 8px solid #F2C879;
-    border-bottom: 8px solid #F2C879;
+    border: 8px solid #F2C879;
+}
+
+.c-b-t-l, .c-b-t-r {
+    z-index: -1;
 }
 
 .calc-display {
@@ -125,21 +165,21 @@ grid-column: 2/3;
     grid-column: 1/5;
     grid-row: 1/2;
     display: grid;
+    border-bottom: 3px solid #F2C879;
 }
 
 .calc-display span {
     justify-self: end;
     align-self: end;
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 0 18px 5px 0;
-
 }
 
 .calculator button {
     color: white;
     background: #BF665E;
     border: none;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .calculator button:active {
@@ -182,13 +222,12 @@ grid-column: 2/3;
     grid-row: 4/9;
     background-color: #734D57;
     color: white; 
-    border-right: 8px solid #F2C879;
-    border-left: 8px solid #F2C879;
-    border-bottom: 8px solid #F2C879;
+    justify-content: center;
+    border: 8px solid #F2C879;
 }
 
 .todo h2 {
-    font-size: 2.2em;
+    font-size: 1.5em;
     margin-top: 0px;
     padding-top: 25px;
     padding-bottom: 5px;
@@ -200,11 +239,38 @@ grid-column: 2/3;
     list-style-type: none;
     font-size: 1em;
     padding: 0px 10px 10px 20px;
+    color: #fff;
 }
 
 input[type="checkbox"] {
     margin-right: 10px;
 }
+
+.todo .add-new-item {
+    display: flex;
+    justify-content: center;
+}
+
+.todo .add-new-item input {
+    width: 75%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #F2B680;
+    color: #F2B680;
+    font-size: 1em;
+}
+
+.todo .add-new-item input::placeholder {
+    color: #fff;
+}
+
+.todo .add-new-item i {
+    padding-left: 10px;
+    color: #fff;
+}
+
+
+
 
 /*
 input[type="checkbox"] { 

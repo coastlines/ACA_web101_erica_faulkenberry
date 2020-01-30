@@ -7,7 +7,8 @@
     <title>Css Grids Dashboard</title>
     <link rel="stylesheet" href="cssgrids-style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli|Orbitron&display=swap" rel="stylesheet">
-</head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  </head>
 <body>
     <main class="main-container">
         <div class="greeting">
@@ -21,10 +22,10 @@
                 <span>787</span>
              </div>
              
-                <button class="calc-funct-column-item-top">AC</button>
+                <button class="calc-funct-column-item-top c-b-t-l">AC</button>
                 <button class="calc-funct-column-item-top">&#177;</button>
                 <button class="calc-funct-column-item-top">%</button>
-                <button class="calc-funct-column-item">&#247</button>
+                <button class="calc-funct-column-item c-b-t-r">&#247</button>
             
                 <button class="calc-funct-column-item-middle">7</button>
                 <button class="calc-funct-column-item-middle">8</button>
@@ -47,7 +48,10 @@
 
         </div>
         <div class="calendar">
-            <div class="today"></div>
+            <div class="today">
+              <h3>Thursday</h3>
+              <h2>13</h2>
+            </div>
             <div class="full-calendar">
                 <div class="month"><h3>February</h3></div>
                 <div class="day-of-week">
@@ -94,20 +98,21 @@
                   <button><time datetime="2020-02-26">26</time></button>
                   <button><time datetime="2020-02-27">27</time></button>
                   <button><time datetime="2020-02-28">28</time></button>
-                  <button><time datetime="2020-02-29">29</time></button>
-                  <button><time datetime="2020-03-01">1</time></button>
-                  
+                  <button><time datetime="2020-02-29">29</time></button>     
                 </div>
             </div>
         </div>
         <div class="todo">
-            <h2>To-Do</h2>
-            <ul>
-                <li><input type="checkbox" ><span ></span>Make breakfast</li>
-                <li><input type="checkbox">Feed the pets</li>
-                <li><input type="checkbox">Finish building dashboard</li>
-            </ul>
-        </div>
+          <h2>Today's To-Do</h2>
+          <ul>
+              <li><input type="checkbox" ><span ></span>Make breakfast</li>
+              <li><input type="checkbox">Feed the pets</li>
+              <li><input type="checkbox">Finish building dashboard</li>
+          </ul>
+          <div class="add-new-item">
+            <input type="text" id="myInput" placeholder="Add new todo"><i class="fas fa-plus addBtn"></i>
+          </div>
+      </div>
     </main>
 </body>
 </html>
