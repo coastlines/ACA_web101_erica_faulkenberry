@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url(https://images.unsplash.com/photo-1534543210152-32025bcfaad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);
     background-repeat: no-repeat;
@@ -12,7 +17,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, ul, .calendar {
 
 main.main-container {
     display: grid;
-    grid-template-columns: 1fr 300px 1fr 450px 1fr 290px 1fr;
+    grid-template-columns: 1fr 300px 1fr 450px 1fr 280px 1fr;
     grid-template-rows: 50px repeat(11, 75px);
 }
 
@@ -155,10 +160,6 @@ grid-column: 2/3;
     border: 8px solid #F2C879;
 }
 
-.c-b-t-l, .c-b-t-r {
-    z-index: -1;
-}
-
 .calc-display {
     background-color: #734D57;
     border: none;
@@ -233,12 +234,13 @@ grid-column: 2/3;
     padding-bottom: 5px;
     text-align: center;
     background: #BF665E;
+    border-bottom: 3px solid #F2C879;
 }
 
 .todo ul {
     list-style-type: none;
     font-size: 1em;
-    padding: 0px 10px 10px 20px;
+    padding: 30px 10px 10px 20px;
     color: #fff;
 }
 
@@ -249,6 +251,7 @@ input[type="checkbox"] {
 .todo .add-new-item {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .todo .add-new-item input {
@@ -268,15 +271,3 @@ input[type="checkbox"] {
     padding-left: 10px;
     color: #fff;
 }
-
-
-
-
-/*
-input[type="checkbox"] { 
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
-}*/
