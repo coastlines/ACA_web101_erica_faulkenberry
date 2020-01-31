@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.calculator-grid {
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 25% repeat(5, 1fr);
+}
+
+.calculator-grid .text-input {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  background-color: red;
+}
+
+.calculator-grid .calc-buttons {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.calculator-grid .calc-buttons-equal {
+  grid-column: 4/-1;
+  grid-row: 5/-1;
+  background-color: red;
+}
