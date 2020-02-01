@@ -1,27 +1,106 @@
 body {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  background-image: url(https://images.unsplash.com/photo-1447433819943-74a20887a81e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1675&q=80);
-  background-repeat: no-repeat;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  margin-left: auto;
+  padding: 10px 0;
+  overflow: hidden;
+  background-color: #E6E6E6;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+
+nav li {
+  padding: 0px 20px;
+}
+
+.search-outer {
+  order: 3;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+
+.search-inner {
+  overflow: hidden;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+}
+
+
+.search-box {
+  border: 0;
+  text-transform: capitalize;
+  padding: 0.3rem 0.3rem 0.3rem 0;
+  font-size: .8em;
+  background: #fff;
+}
+
+.fa-search {
+  padding: 0.3rem;
+}
+
+.search-inner button {
+  background: #205B8A;
+  color: white;
+  border: none;
+  padding: 0.3rem;
+}
+
+
+.nasa-img {
+  background: url(https://www.nasa.gov/sites/default/files/thumbnails/image/potw1636a.jpg) no-repeat center center fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   height: 500px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-position: center;
 }
 
-header h1 {
+.nasa-img h1 {
   font-size: 6em;
   color: white;
+  font-family: nasalization, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 700;
 }
 
 footer {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
+  padding: 20px;
+  background-color: #E6E6E6;
+  flex-shrink: 0;
   width: 100%;
 }
 
@@ -29,8 +108,52 @@ footer ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  min-width: 200px;
+  max-width: 400px;
+  color: #646464;
+  line-height: 1.7;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+label {
+  margin: 0;
+  padding: 0 0 2px 0;
+  color: #646464;
+}
+
+footer input, footer textarea {
+  padding: 3px;
+  font-size: 16px;
+  border: 0;
+  width: 230px;
+  color: #646464;
+}
+footer input[type="text"] {
+  margin-bottom: 10px;
+}
+
+footer textarea {
+  resize: none;
+  height: 50px;
+}
+
+footer button {
+  background: #4D4D4D;
+  color: #fff;
+  padding: 10px 0;
+  max-width: 50%;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/**
 .social {
   order: 2;
 }
@@ -40,3 +163,4 @@ footer ul {
 .contact {
   order: 1;
 }
+**/
