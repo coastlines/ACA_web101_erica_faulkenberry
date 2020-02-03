@@ -1,0 +1,89 @@
+/** Main Grid Structure **/
+.grid-container-body {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas: 
+    "side-nav header"
+    "side-nav main"
+    "side-nav footer"; 
+  grid-gap: 1em;
+  height: 100vh;
+}
+
+.header {
+  background-color: blue;
+  grid-area: header;
+}
+
+.main {
+    background-color: red;
+    grid-area: main;
+  }
+
+.side-nav {
+  background-color: purple;
+  grid-area: side-nav;
+  display: flex; /* inner structure */
+  flex-direction: column;
+}
+
+.footer {
+  background-color: green;
+  grid-area: footer;
+}
+
+/** Header and Footer Inner Flexbox Structure
+Using element rather than class will add flexbox 
+but will not override background color **/
+.header, .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 15px;
+  background-color: orange;
+}
+
+.header-notice-bar {
+  margin-left: auto;
+}
+
+.header-search {
+  margin-left: 10px;
+}
+
+/** Side Nav  **/
+.side-nav-list {
+  padding: 0;
+  margin-top: 80px;
+  list-style-type: none;
+}
+
+.side-nav-list-item {
+  padding: 20px 20px 20px 40px;
+  color: pink;
+}
+
+.side-nav-list-item:hover {
+  color: fuchsia;
+  cursor: pointer;
+}
+
+/** Main Dashboard Area  **/
+.main-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+   /* if cards cannot have 265px they wrap to a new row,
+   if there is extra space, they will expand to fit*/
+  grid-auto-rows: 80px;
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.overview-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: darkcyan;
+} 
