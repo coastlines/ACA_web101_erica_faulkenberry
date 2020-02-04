@@ -1,4 +1,4 @@
-body {
+body, p, h1, h2, h3, h4, h5, h6, a, li, i {
   margin: 0;
   padding: 0;
 }
@@ -135,11 +135,23 @@ but will not override background color **/
 
 .overview-card {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 20px;
   background-color: darkcyan;
-} 
+  text-transform: capitalize;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.overview-card-info, .overview-card-icon {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.overview-card-info h5, .overview-card-icon i {
+  padding-bottom: 25px;
+}
+
 
 .main-cards {
   display: grid;
