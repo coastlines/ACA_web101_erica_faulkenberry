@@ -1,12 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 /** Main Grid Structure **/
 .grid-container-body {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 50px 1fr 50px;
   grid-template-areas: 
-    "side-nav header"
-    "side-nav main"
-    "side-nav footer"; 
+    "header"
+    "main"
+    "footer"; 
   grid-gap: 1em;
   height: 100vh;
 }
@@ -24,8 +28,6 @@
 .side-nav {
   background-color: purple;
   grid-area: side-nav;
-  display: flex; /* inner structure */
-  flex-direction: column;
 }
 
 .footer {
@@ -69,13 +71,64 @@ but will not override background color **/
   cursor: pointer;
 }
 
+/*Hamburger menu icon, stays fixed on mobile for any possible scrolling */
+.header-menu-icon {
+  position: fixed;
+  display: flex;
+  top: 5px;
+  left: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  padding: 12px;
+  background-color: #DADAE3;
+}
+
+/* Make room for the menu icon on mobile */
+.header-search {
+  margin-left: 42px;
+}
+
+/* Mobile-first side nav styles */
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  overflow-y: auto;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  z-index: 2; /* Needs to sit above the hamburger menu icon */
+  background-color: #394263;
+  transform: translateX(-245px);
+  transition: all .6s ease-in-out;
+}
+
+/* The active class is toggled on hamburger and close icon clicks */
+.side-nav.active {
+  transform: translateX(0);
+}
+
+/* Only visible on mobile screens */
+.side-nav-close-icon {
+  position: absolute;
+  visibility: visible;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  color: pink;
+}
+
 /** Main Dashboard Area  **/
 .main-overview {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
    /* if cards cannot have 265px they wrap to a new row,
    if there is extra space, they will expand to fit*/
-  grid-auto-rows: 80px;
+  grid-auto-rows: 100px;
   grid-gap: 20px;
   margin: 20px;
 }
@@ -87,3 +140,58 @@ but will not override background color **/
   padding: 20px;
   background-color: darkcyan;
 } 
+
+.main-cards {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: 450px;
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.main-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: darkcyan;
+} 
+
+.main-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+   /* if cards cannot have 265px they wrap to a new row,
+   if there is extra space, they will expand to fit*/
+  grid-auto-rows: 80px;
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.stats-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: darkcyan;
+} 
+
+
+@media only screen and (min-width: 999px) {
+  .main-cards {
+    grid-template-columns: 70% 1fr;
+  }
+  .grid-container-body {
+    grid-template-columns: 240px 1fr;
+    grid-template-areas: 
+      "side-nav header"
+      "side-nav main"
+      "side-nav footer"; 
+  }
+  .side-nav {
+    position: relative; /* Fixed position on mobile */
+    transform: translateX(0);
+  }
+  .side-nav-close-icon {
+    visibility: hidden;
+  }
+}

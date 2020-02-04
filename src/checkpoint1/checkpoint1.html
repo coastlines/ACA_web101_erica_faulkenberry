@@ -6,16 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Checkpoint 1 Dashboard</title>
   <link rel="stylesheet" href="./checkpoint1.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./sidenav.js"></script>
 </head>
 <body>
   <div class="grid-container-body">
     <header class="header">
-      <div class="header-hamburger-menu">burg</div>
+      <div class="header-menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
       <div class="header-search">search..</div>
       <div class="header-notice-bar">notices</div>
     </header>
+
     <aside class="side-nav">
-      <div class="logo">Logo Img here</div>
+      <!--<div class="logo">Logo Img here</div> -->
+      <div class="side-nav-close-icon">
+        <i class="fas fa-times"></i>
+      </div>
       <ul class="side-nav-list">
         <li class="side-nav-list-item">Item One</li>
         <li class="side-nav-list-item">Item Two</li>
@@ -24,6 +33,7 @@
         <li class="side-nav-list-item">Item Five</li>
       </ul>
     </aside>
+
     <main class="main">
       <div class="main-overview">
         <div class="overview-card">
@@ -43,7 +53,25 @@
           <div class="overview-card-info">overview info</div>
         </div>
       </div>
+      <div class="main-cards">
+        <div class="main-card main-card-span-2">main card</div>
+        <div class="main-card main-card-span-1">main card</div>
+      </div>
 
+      <div class="main-stats">
+        <div class="stats-card">
+          <div class="stats-card-icon">stats icon</div>
+          <div class="stats-card-info">stats info</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card-icon">stats icon</div>
+          <div class="stats-card-info">stats info</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card-icon">stats icon</div>
+          <div class="stats-card-info">stats info</div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer-copyright">&copy; 2020 Dashy</div>
