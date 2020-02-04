@@ -263,6 +263,41 @@ but will not override background color **/
   border-bottom: 1px solid lightgray;
 }
 
+.chart-1 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.row-1 {
+  background-color: #00A0EB;
+  width: 60%;
+  height: 30px;
+  margin: 5px;
+} 
+
+.row-2 {
+  background-color: #02A851;
+  width: 40%;
+  height: 30px;
+  margin: 5px;
+} 
+
+.row-3 {
+  background-color: #8C0199;
+  width: 70%;
+  height: 30px;
+  margin: 5px;
+} 
+
+.row-4 {
+  background-color: #FF9620;
+  width: 30%;
+  height: 30px;
+  margin: 5px;
+} 
+
 .main-card-span-2 .main-card-chart {
   width: 100%;
   height: 60%;
@@ -331,6 +366,34 @@ but will not override background color **/
   border-bottom: 0;
 }
 
+.chart-2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.col-1 {
+  background-color: #00A0EB;
+  width: 50px;
+  height: 60%;
+  margin: 5px;
+} 
+
+.col-2 {
+  background-color: #02A851;
+  width: 50px;
+  height: 70%;
+  margin: 5px;
+} 
+
+.col-3 {
+  background-color: #8C0199;
+  width: 50px;
+  height: 40%;
+  margin: 5px;
+} 
 /* Main Stats */
 
 .main-stats {
