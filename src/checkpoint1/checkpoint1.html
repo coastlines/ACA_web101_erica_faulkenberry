@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Checkpoint 1 Dashboard</title>
+  <link rel="stylesheet" href="./checkpoint1.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="./sidenav.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="grid-container-body">
+    <header class="header">
+      <div class="header-menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="header-search">
+        <div class="search-inner">
+          <input class="search-box" type="text" name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+      <div class="header-notice-bar">
+        <i class="far fa-envelope-open"></i>
+        <i class="far fa-bell"></i>
+        <i class="far fa-user-circle"></i>
+      </div>
+    </header>
+
+    <aside class="side-nav">
+      <div class="logo">
+        <img src="./img/logo-3.svg">
+      </div>
+      <div class="side-nav-close-icon">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul class="side-nav-list">
+        <li class="side-nav-list-item"><i class="fas fa-chart-line"></i>Dashboard</li>
+        <li class="side-nav-list-item"><i class="fas fa-shopping-cart"></i>Orders</li>
+        <li class="side-nav-list-item"><i class="fas fa-dollar-sign"></i>Revenue</li>
+        <li class="side-nav-list-item"><i class="far fa-lightbulb"></i>Insights</li>
+        <li class="side-nav-list-item"><i class="fas fa-lock"></i>Admin</li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <div class="main-overview">
+
+        <div class="overview-card">
+          <div class="overview-card-icon">
+            <h4>9526</h4>
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="progress my-3" style="height:3px;">
+            <div class="progress-bar" style="width:55%;"></div>
+          </div>
+          <div class="overview-card-info">
+            <h5>total orders</h5>
+            <h5>+4.2%&uarr;</h5>
+          </div>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-card-icon">
+            <h4>9526</h4>
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <div class="progress my-3" style="height:3px;">
+            <div class="progress-bar" style="width:67%;"></div>
+          </div>
+          <div class="overview-card-info">
+            <h5>total revenue</h5>
+            <h5>+4.2%&uarr;</h5>
+          </div>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-card-icon">
+            <h4>9526</h4>
+            <i class="far fa-eye"></i>
+          </div>
+          <div class="progress my-3" style="height:3px;">
+            <div class="progress-bar" style="width:42%;"></div>
+          </div>
+          <div class="overview-card-info">
+            <h5>visitors</h5>
+            <h5>+4.2%&uarr;</h5>
+          </div>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-card-icon">
+            <h4>9526</h4>
+            <i class="fab fa-envira"></i>
+          </div>
+          <div class="progress my-3" style="height:3px;">
+            <div class="progress-bar" style="width:71%;"></div>
+          </div>
+          <div class="overview-card-info">
+            <h5>messages</h5>
+            <h5>+4.2%&uarr;</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-cards">
+
+        <div class="main-card main-card-span-2">
+          <div class="main-card-title">
+            <h5>Site Traffic</h4>
+          </div>
+          <div class="main-card-chart">
+            <div class="main-card-chart-inner chart-1">
+              <div class="chart-row row-1"></div>
+              <div class="chart-row row-2"></div>
+              <div class="chart-row row-3"></div>
+              <div class="chart-row row-4"></div>
+              <div class="chart-row row-5"></div>
+            </div>
+          </div>
+          <div class="main-card-breakdown">
+            <div class="main-card-breakdown-item">
+              <h4>45.87M</h4>
+              <h6 class="h6-card-item">overall visitors &uarr; 2.43%</h6>
+            </div>
+            <div class="main-card-breakdown-item">
+              <h4>15:48</h4>
+              <h6 class="h6-card-item">visitor duration &uarr; 12.65%</h6>
+            </div>
+            <div class="main-card-breakdown-item m-c-b-i-last">
+              <h4>245.65</h4>
+              <h6 class="h6-card-item">pages/visit &uarr; 5.62%</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-card main-card-span-1">
+          <div class="main-card-title">
+            <h5>Weekly Sales</h5>
+          </div>
+          <div class="main-card-chart">
+            <div class="main-card-chart-inner chart-2">
+              <div class="chart-column col-1"></div>
+              <div class="chart-column col-2"></div>
+              <div class="chart-column col-3"></div>
+            </div>
+          </div>
+          <div class="main-card-breakdown">
+            <div class="main-card-breakdown-item">
+              <h5>Direct</h5>
+              <h5>$5876</h5>
+              <h5>&uarr;55%</h5>
+            </div>
+            <div class="main-card-breakdown-item">
+              <h5>Affiliat</h5>
+              <h5>$5876</h5>
+              <h5>&uarr;55%</p>
+            </div>
+            <div class="main-card-breakdown-item">
+              <h5>E-mail</h5>
+              <h5>$5876</h5>
+              <h5>&uarr;55%</h5>
+            </div>
+            <div class="main-card-breakdown-item m-c-b-i-last">
+              <h5>Other</h5>
+              <h5>$5876</h5>
+              <h5>&uarr;55%</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-stats">
+
+        <div class="stats-card">
+          <div class="stats-card-chart">
+            <div class="radialProgressBar progress-10">
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="stats-card-info">
+            <h5>facebook followers</h5>
+            <h6 class="h6-card-item">22.14% &uarr; since last week</h6>
+          </div>
+          <div class="stats-card-icon"><i class="fab fa-facebook-f"></i></div>
+        </div>
+
+        <div class="stats-card">
+          <div class="stats-card-chart">
+            <div class="radialProgressBar progress-30">
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="stats-card-info">
+            <h5>Twitter Tweets</h5>
+            <h6 class="h6-card-item">32.15% &uarr; since last week</h6>
+          </div>
+          <div class="stats-card-icon"><i class="fab fa-twitter"></i></div>
+        </div>
+
+        <div class="stats-card">
+          <div class="stats-card-chart">
+            <div class="radialProgressBar progress-50">
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="stats-card-info">
+            <h5>Youtube Subscribers</h5>
+            <h6 class="h6-card-item">58.24% &uarr; since last week</h6>
+          </div>
+          <div class="stats-card-icon"><i class="fab fa-youtube"></i></div>
+        </div>
+
+      </div>
+
+
+    </main>
+    <footer class="footer">
+      <div class="footer-copyright"><h6>&copy; 2020 Dashy</h6></div>
+      <div class="footer-madeby"><h6>Made by @coastlines</h6></div>
+    </footer>
+  </div>
+</body>
+</html>
