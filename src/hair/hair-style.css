@@ -222,17 +222,25 @@ section {
   padding: 0 15px;
 }
 
+.quotes p {
+  margin-bottom: 30px;
+}
+
 .endorsement-logos {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 720px;
+  margin-bottom: 30px;
 }
 
 .endorsement-logo-img {
-  max-width: 140px;
+  max-width: 130px;
   width: 100%;
+  padding: 10px;
   filter: invert(30%) saturate(0%) brightness(150%);
 }
 
@@ -297,9 +305,16 @@ section {
 
 .img-container img {
   width: 100%;
+  transition: opacity 1s ease-out;
+}
+
+.img-container img:hover {
+  width: 100%;
+  opacity: 0.8;
 }
 
 footer {
+  background-color: #fff;
   border-top: 15px solid black;
   padding-top: 15px;
   padding-bottom: 35px;
@@ -378,13 +393,38 @@ footer li {
     padding: 0 15px;
   }
 
+  .tablet-visible {
+    display: unset;
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .img-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 45%;
+    min-width: 150px;
+    padding: 1%;
+    margin: 0;
+  }
+
+  .img-container img {
+    width: 100%;
+    margin: 0;
+  }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .mobile-hidden {
-    display: unset;
-  }
 
   .nav-items li {
     font-size: 16px;
@@ -406,10 +446,6 @@ footer li {
     padding: 0 60px;
   }
 
-  .endorsement-logos {
-    justify-content: center;
-  }
-
   .endorsement-logos img {
     max-width: 120px;
   }
@@ -423,9 +459,6 @@ footer li {
 
   .img-column, .content-column {
     width: 41.66666667%;
-   /* min-width: 210px;
-    max-width: 450px; */
-    padding: 0px 15px;
    }
   
   .local-biz {
@@ -537,10 +570,39 @@ footer li {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .mobile-hidden {
+    display: unset;
+  }
+  
+  .nav-items li {
+    padding: 0 10px;
+   }
+
+   .jobs-btn-nav {
+    display: unset;
+  }
 
   .quotes {
     padding-right: 5%;
     padding-left: 5%;
+  }
+
+  .column-container {
+    margin: 15px 0px;
+  }
+
+  .img-column, .content-column {
+    width: 45%;
+    min-width: 210px;
+    max-width: 800px;
+   }
+
+   .work-here .img-column {
+    order: 2;
+  }
+  
+  .work-here .content-column {
+    order: 1;
   }
 
   .h2-footer {
@@ -548,25 +610,27 @@ footer li {
     font-weight: 450;
     line-height: 38px;
   }
-  
-  .jobs-btn-nav {
-    display: unset;
-  }
 
-  .img-column, .content-column {
-    width: 40%;
-    min-width: 210px;
-    max-width: 800px;
-   }
-
-  .nav-items li {
-   padding: 0 10px;
+  .footer-inner {
+    height: 100%;
   }
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) { 
+
+  h1 {
+    font-size: 134px;
+  }
+
+  .endorsement-logos {
+    justify-content: space-between;
+  }
+
+  .endorsement-logo-img {
+    padding: 0;
+  }
 
   .footer-column-1 {
     display: flex;
@@ -580,10 +644,6 @@ footer li {
 
   .nav-items li {
     padding: 0 15px;
-   }
-
-   h1 {
-     font-size: 134px;
    }
 
 }
