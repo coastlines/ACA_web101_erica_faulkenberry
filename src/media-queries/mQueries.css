@@ -1,0 +1,207 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+}
+
+header, main, footer {
+   
+}
+
+h1, h2, h3, h5 {
+   
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: .04em;
+}
+
+p, ul li, a {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*** HEADER ***/
+
+header {
+    padding: 1% 1%;
+    border-bottom: .1em solid #BF8339; 
+}
+
+/*** NAV ***/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.logo-container {
+    flex-grow: 1;
+}
+
+nav p {
+    font-family: 'Bungee Shade', cursive;
+    color: #2D3773;
+    text-transform: uppercase;
+}
+
+nav a {
+    padding: 10px 15px;
+    color: black;
+    text-transform: capitalize;
+}
+
+
+/*** MAIN CONTENT ***/
+main {
+    padding: 3% 5%;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+}
+
+.main-content {
+    flex-basis: 70%;
+    padding-right: 5%;
+}
+
+.main-content img {
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+}
+
+.main-content h1 {
+    text-transform: capitalize;
+}
+
+button {
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1em;
+}
+
+/*** ASIDE ***/
+
+aside {
+    flex-basis: 30%;
+    padding-right: 3%;
+}
+
+aside h3 {
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+    margin-block-start: 0;
+}
+
+aside ul {
+    font-weight: bold;
+}
+
+li {
+    padding-bottom: 1em;
+    font-size: 1.3em;
+}
+
+/*** Footer ***/
+
+footer {
+    background: #EDE7D7;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+    color: #BF8339;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer h3 {
+    text-transform: uppercase;
+}
+
+footer li {
+    border-bottom: .03em solid #BF8339;
+    padding-bottom: 8px;
+    padding-top: 2.5px;
+}
+
+footer ul li a {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: #BF8339;
+}
+
+
+
+@media (max-width: 700px) {
+    
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo-container p {
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    .menu-container {
+       padding-bottom: 15px;
+    }
+    
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .container > * {
+        flex-grow: 1;
+        justify-content: ;
+    }
+
+    .main-content {
+        padding-right: 0;
+    }
+
+    
+}
+
+@media (max-width: 576px) {
+    aside {
+        visibility: hidden;
+        height: 5em;
+    }
+    
+    nav a {
+        padding: 5px 10px 20px 10px;
+        font-size: 18px;
+    }
+
+}
+
