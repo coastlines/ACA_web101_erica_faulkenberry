@@ -13,7 +13,7 @@ nav li, section button, h2, h3 {
 
 h1 {
   font-family: 'Leckerli One', cursive;
-  font-size: 108px;
+  font-size: 86px;
   line-height: 1;
 }
 
@@ -24,8 +24,9 @@ h2 {
 .h2-footer {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  font-size: 32px;
-  padding-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 h3 {
@@ -45,23 +46,29 @@ h4 {
 
 p {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .quotes p {
-  font-size: 22px;
+  font-size: 14px;
   font-style: italic;
   text-align: center;
-  line-height: 35px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 li {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 60px;
 }
 
 .banner h4 {
   margin-top: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .btn {
@@ -108,22 +115,42 @@ nav {
 
 .nav-items {
   display: flex;
-  flex-wrap: wrap;
   text-transform: capitalize;
   justify-content: flex-end;
 }
 
 .nav-items li {
-  padding: 0 14px;
+  padding: 0 5px;
+}
+
+.link-underline:hover, .link-underline:active {
+  text-decoration: underline;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+section .btn {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.book-btn-nav {
+  background: #000;
+  color: #fff;
+}
+
+.jobs-btn-nav {
+  background: #273371;
+  color: #fff;
 }
 
 .book-btn-nav:hover {
-  background: #000;
   color: #ff0;
 }
 
 .jobs-btn-nav:hover {
-  background: #273371;
   color: #ff0;
 }
 
@@ -192,15 +219,15 @@ section {
   flex-direction: column;
   display: flex;
   margin-top: 40px;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .endorsement-logos {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0 40px;
 }
 
 .endorsement-logo-img {
@@ -225,9 +252,10 @@ section {
 }
 
 .img-column, .content-column {
- width: 87%;
+ width: 100%;
  min-width: 300px;
  max-width: 850px;
+ padding: 0 15px;
 }
 
 .img-column img {
@@ -238,11 +266,19 @@ section {
   margin: 3% 0;
 }
 
+.work-here .img-column {
+  order: 1;
+}
+
+.work-here .content-column {
+  order: 2;
+}
+
 .photo-gallery {
   display: flex;
   flex-flow: column wrap;
   background-color: #fff;
-  padding: 20px;
+  padding: 15px 15px 30px 15px;
 }
 
 .gallery-container {
@@ -254,11 +290,9 @@ section {
 }
 
 .img-container {
-  justify-content: space-between;
   padding: 10px;
   min-width: 200px;
   max-width: 400px;
-  width: 23%;
 }
 
 .img-container img {
@@ -267,19 +301,29 @@ section {
 
 footer {
   border-top: 15px solid black;
+  padding-top: 15px;
+  padding-bottom: 35px;
   margin-top: 0;
-  padding-bottom: 40px;
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
+  text-align: center;
+}
+
+.footer-inner {
+  width: 100%;
 }
 
 footer a {
-  text-decoration: none;
+  color: #273371;
 }
 
-footer a:hover {
+footer a:hover, footer a:active {
   text-decoration: underline;
+}
+
+footer ul {
+  margin-bottom: 22px;
 }
 
 footer li {
@@ -290,13 +334,10 @@ footer li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-flow: row wrap;
-  padding-right: 8%;
-  height: 200px;
-}
-
-.footer-column-1 ul {
-  padding-left: 30px;
+  flex-flow: column wrap;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .footer-logo-img {
@@ -304,22 +345,20 @@ footer li {
 }
 
 .footer-column-2 {
-  padding-left: 15px;
-  padding-top: 30px;
-  border-left: 1px solid #000;
-  height: 200px;
+  border-bottom: 1px solid #000;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 17px;
 }
 
 .footer-column-3 {
   display: flex;
   flex-direction: column;
-  padding: 30px 8% 0 15px;
-  border-left: 1px solid #000;
-  height: 200px;
+  padding-top: 15px;
 }
 
 .footer-column-3 a {
-  padding-left: 15px;
+  padding: 2px 5px;
 }
 
 .footer i {
@@ -328,83 +367,190 @@ footer li {
   padding-bottom: 8px;
 }
 
-.fa-instagram {
-  margin: 0 2px 0 0;
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-family: 'Leckerli One', cursive;
+    font-size: 108px;
+  }
+
+  .nav-items li {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
 }
-
-.fa-facebook-f {
-  margin: 0 6px 0 3px;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 778px) {
+@media only screen and (min-width: 768px) {
+  .mobile-hidden {
+    display: unset;
+  }
+
+  .nav-items li {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  
   .main {
     margin: 80px auto 0 auto;
     padding: 0 8.33333333%;
   }
 
   .quotes {
-    margin: 40px 11% 30px 11%;
+    margin: 40px 0 30px 0;
+  }
+
+  .quotes p {
+    font-size: 22px;
+    line-height: 35px;
+    padding: 0 60px;
+  }
+
+  .endorsement-logos {
+    justify-content: center;
+  }
+
+  .endorsement-logos img {
+    max-width: 120px;
   }
 
   .column-container {
     display: flex;
-    margin: 15px 0;
+    margin: 15px -15px;
     height: 100%;
-    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .img-column, .content-column {
-    width: 41.66666667%;;
+    width: 41.66666667%;
    /* min-width: 210px;
     max-width: 450px; */
     padding: 0px 15px;
    }
   
-   .local-biz {
+  .local-biz {
     padding-bottom: 40px;
   }
-
-   footer {
-    border-top: 15px solid black;
-    padding-bottom: 40px;
+  
+  .gallery-container {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .img-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    width: 23%;
+    min-width: 150px;
+    padding: 1%;
+    margin: 0;
+  }
+
+  .img-container img {
+    width: 100%;
+    margin: 0;
+  }
+
+  footer {
+    border-top: 15px solid black;
+    padding-top: 0 0 35px 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .footer-inner {
+    padding: 0 15px 0 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-direction: row;
+    height: 180px;
+  }
+
+  .h2-footer {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
   }
    
-   .footer-column-1 {
+  .footer-column-1 {
+    border-bottom: 0;
+    margin: 0;
+    padding: 0 15px 0 0;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    padding-right: 8%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
   }
 
-   .footer-column-2 {
-    padding-left: 15px;
-    padding-top: 30px;
+  .legal {
+    padding-left: 25px;
+  }
+
+  .footer-column-2 {
     border-left: 1px solid #000;
+    border-bottom: 0;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0 30px 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
   }
   
   .footer-column-3 {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 8% 0 15px;
     border-left: 1px solid #000;
+    padding: 0 0 0 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+
+  .footer i {
+    padding-left: 10px;
+  }
+
+  .fa-instagram {
+    margin: 0 2px 0 0;
+  }
+  
+  .fa-facebook-f {
+    margin: 0 6px 0 3px;
   }
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .footer-column-3 {
-    padding-right: 17%;
+
+  .quotes {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .h2-footer {
+    font-size: 32px;
+    font-weight: 450;
+    line-height: 38px;
+  }
+  
+  .jobs-btn-nav {
+    display: unset;
   }
 
   .img-column, .content-column {
@@ -413,19 +559,31 @@ footer li {
     max-width: 800px;
    }
 
+  .nav-items li {
+   padding: 0 10px;
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  footer {
-    justify-content: space-between;
-  }
+@media only screen and (min-width: 1200px) { 
 
   .footer-column-1 {
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding-top: 30px;
+    display: flex;
+    flex-direction: flex-start;
+    margin-top: 40px;
   }
-  
+
+  .legal {
+    padding-left: 0;
+  }
+
+  .nav-items li {
+    padding: 0 15px;
+   }
+
+   h1 {
+     font-size: 134px;
+   }
+
 }

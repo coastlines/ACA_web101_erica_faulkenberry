@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./hair-style.css">
   <link rel="stylesheet" href="./ddchardware-compressed-webfont.woff/ddc-hardware-font-stylesheet.css" type="text/css" charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Leckerli+One|Montserrat:400,700,800,900|Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Leckerli+One|Montserrat:400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 <body>
@@ -18,11 +18,11 @@
         <img class="nav-logo-img" src="./img/logo-6.svg">
       </div>
       <ul class="nav-items">
-        <li>locations</li>
-        <li>services</li>
-        <li>about</li>
-        <li class="btn book-btn-nav">book a service</li>
-        <li class="btn jobs-btn-nav">join our team</li>
+        <li class="mobile-visible link-underline"><a href="#">locations</a></li>
+        <li class="mobile-visible link-underline"><a href="#">services</a></li>
+        <li class="mobile-hidden link-underline"><a href="#">about</a></li>
+        <li class="btn book-btn-nav mobile-hidden"><a href="#">book a service</a></li>
+        <li class="btn jobs-btn-nav mobile-hidden"><a href="#">join our team</a></li>
       </ul>
     </nav>
   </header>
@@ -31,8 +31,8 @@
     <h1>For all<br>Y'all</h1>
     <h4>Texas born, award-winning cuts and color.</h4>
     <div class="banner-buttons-container">
-      <button class="btn book-btn-banner">book a service</button>
-      <button class="btn jobs-btn-banner">join our team</button>
+      <button class="btn book-btn-banner"><a href="#">book a service</a></button>
+      <button class="btn jobs-btn-banner"><a href="#">join our team</a></button>
     </div>
   </section>
 
@@ -55,7 +55,7 @@
       <div class="content-column">
         <h2>new: fellow barber products</h2>
         <p>100% natural fragrances. Paraben, sulfate and cruelty free.</p>
-        <button class="column-btn">read more</button>
+        <button class="column-btn"><a href="#">read more</a></button>
       </div>
     </section>
 
@@ -63,7 +63,7 @@
       <div class="content-column">
         <h2>Love where you work.</h2>
         <p>We think happy employees make for happy clients.</p>
-        <button class="column-btn">join our team</button>
+        <button class="column-btn"><a href="#">join our team</a></button>
       </div>
       <div class="img-column">
         <img src="./img/element5-digital-QJtyomGCYGw-unsplash.jpg">
@@ -77,7 +77,7 @@
       <div class="content-column">
         <h2>Thank you, Austin!</h2>
         <p>Birds has been named Best Barber Shop in the 2019 Statesman Best of The Best readers poll.</p>
-        <button class="column-btn">read more</button>
+        <button class="column-btn"><a href="#">read more</a></button>
       </div>
     </section>
   </div>
@@ -93,38 +93,40 @@
     </section>
 
   <footer class="footer">
+    <div class="footer-inner">
 
-    <div class="footer-column-1">
-      <div class="footer-logo-container">
-        <img class="footer-logo-img" src="./img/logo-6.svg">
+      <div class="footer-column-1">
+        <div class="footer-logo-container">
+          <img class="footer-logo-img" src="./img/logo-6.svg">
+        </div>
+        <div class="legal">
+          <ul>
+            <li>&copy; 2020 Bobs Barbershop</li>
+            <li>All Rights Reserved.</li>
+            <li>Salon, barber shop: we do haircuts </li>
+            <li><a href="#">Privacy Policy.</a></li>
+            <li><a href="#">Accessibility Notice.</a></li>
+            <li>Made by <a href="#">@coastlines</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="legal">
+
+      <div class="footer-column-2">
+        <h2 class="h2-footer">contact us</h2>
         <ul>
-          <li>&copy; 2020 Bobs Barbershop</li>
-          <li>All Rights Reserved.</li>
-          <li>Salon, barber shop: we do haircuts </li>
-          <li>Privacy Policy.</li>
-          <li>Accessibility Notice.</li>
-          <li>Made by @coastlines</li>
+          <li>Questions/Comments: <a href="#">shoutout@bobsbarbershop.com</a></li>
+          <li>Donations: <a href="#">donations@bobsbarbershop.com</a></li>
+          <li>Press Inquiries: <a href="#">erica@bobsbarbershop.com</a></li>
+          <li>Media Kit: <a href="#">Click Here</a></li>
         </ul>
       </div>
-    </div>
 
-    <div class="footer-column-2">
-      <h2 class="h2-footer">contact us</h2>
-      <ul>
-        <li>Questions/Comments: shoutout@bobsbarbershop.com</li>
-        <li>Donations: donations@bobsbarbershop.com</li>
-        <li>Press Inquiries: erin@bobsbarbershop.com</li>
-        <li>Media Kit: Click Here</li>
-      </ul>
-    </div>
-
-    <div class="footer-column-3">
-      <h2 class="h2-footer">elsewhere</h2>
-        <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
-        <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
-        <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+      <div class="footer-column-3">
+        <h2 class="h2-footer">elsewhere</h2>
+          <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+          <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+          <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+      </div>
     </div>
   </footer>
 </body>
