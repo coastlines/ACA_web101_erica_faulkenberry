@@ -84,8 +84,7 @@ but will not override background color **/
   margin-left: 10px;
   display: flex;
   justify-content: flex-end;
-  padding-right: 5%;
-  padding-left: 60px;
+  padding-left: 25px;
 }
 
 .search-inner {
@@ -545,6 +544,10 @@ but will not override background color **/
 
   .side-nav-close-icon {
     visibility: hidden;
+  }
+
+  .header-search {
+    padding-left: 0px;
   }
 
 }
