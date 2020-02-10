@@ -167,7 +167,22 @@ but will not override background color **/
 }
 
 .side-nav i {
-  padding-right: 17px;
+  margin-right: 17px;
+}
+
+.fa-dollar-sign {
+  margin-right: 22px !important;
+  margin-left: 5px;
+}
+
+.fa-lightbulb {
+  margin-right: 20px !important;
+  margin-left: 5px;
+}
+
+.fa-lock {
+  margin-right: 19px !important;
+  margin-left: 4px;
 }
 
 /* The active class is toggled on hamburger and close icon clicks */
