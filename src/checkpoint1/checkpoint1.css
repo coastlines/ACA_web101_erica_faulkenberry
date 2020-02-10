@@ -32,7 +32,6 @@ h6 {
     "header"
     "main"
     "footer"; 
-  grid-gap: 1em;
   height: 110vh;
 }
 
@@ -60,7 +59,7 @@ but will not override background color **/
 .header, .footer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0 15px;
   background-color: #fff;
 }
@@ -86,13 +85,11 @@ but will not override background color **/
   display: flex;
   justify-content: flex-end;
   padding-right: 5%;
+  padding-left: 60px;
 }
 
 .search-inner {
-  overflow: hidden;
   display: inline-flex;
-  padding: 0;
-  margin: 0;
   border: 1px lightgray solid;
   border-radius: 5px;
 }
@@ -148,9 +145,7 @@ but will not override background color **/
 }
 
 /* Make room for the menu icon on mobile */
-.header-search {
-  margin-left: 42px;
-}
+
 
 /* Mobile-first side nav styles */
 .side-nav {
