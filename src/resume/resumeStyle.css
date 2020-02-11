@@ -1,5 +1,10 @@
 body {
-   background-color: #D4EDF4; 
+   background-color: #D4EDF4;
+}
+
+.body-container {
+    margin-left: 40px;
+    margin-right: 20px;
 }
 
 .container {
@@ -48,6 +53,7 @@ nav {
     align-items: center;
     flex-flow: row wrap;
 }
+
 header h1 {
     font-size: 1.3em;
 }
@@ -131,7 +137,8 @@ nav a:hover {
 
 #skills .inner-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
 }
 
@@ -145,8 +152,9 @@ nav a:hover {
 
 .skill-container {
     padding: 20px;
-    text-align: center;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 .fas:hover, .skill-container p:hover {
@@ -258,13 +266,11 @@ input {
 
 @media (max-width: 500px) {
     nav {
-       /* display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap; 
-        flex-basis: 100%; */
+        display: flex;
+        justify-content: center;
+        flex-wrap: column wrap; 
+        flex-basis: 100%; 
         font-size: .7em;
-        margin: 0 auto;
-        display: block;
     }
 
     nav a {
