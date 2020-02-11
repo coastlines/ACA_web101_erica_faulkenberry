@@ -247,7 +247,6 @@ section {
 .endorsement-logo-img:hover,
 .endorsement-logo-img:focus {
   filter: invert(0%) saturate(0%) brightness(100%);
-
 }
 
 .column-container {
@@ -475,9 +474,9 @@ footer li {
   }
 
   .img-container {
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    display: flex;
     width: 23%;
     min-width: 150px;
     padding: 1%;
