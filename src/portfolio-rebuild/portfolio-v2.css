@@ -106,16 +106,6 @@ a:hover {
   width: 30%;
 }
 
-.video-container {
-  box-sizing: border-box;
-  margin: 30px;
-}
-
-iframe {
-  box-sizing: border-box;
-  max-width: 100%;
-}
-
 footer {
   display: flex;
   align-items: center;
@@ -124,115 +114,17 @@ footer {
   color: #4801FF;
 }
 
-.fab {
-  color: #4801FF;
-  font-size: 3vw;
+footer a {
   display: flex;
   align-self: center;
 }
 
-/*** Nav Animation Shadow **/
-.text-shadow-pop-br {
-	-webkit-animation: text-shadow-pop-br 0.6s 1s both;
-	        animation: text-shadow-pop-br 0.6s 1s both;
+.fab {
+  color: #4801FF;
+  font-size: 3vw;
 }
 
-@-webkit-keyframes text-shadow-pop-br {
-  0% {
-    text-shadow: 0 0 #eed2cc, 0 0 #eed2cc, 0 0 #eed2cc, 0 0 #eed2cc, 0 0 #eed2cc, 0 0 #eed2cc, 0 0 #eed2cc, 0 0 #eed2cc;
-    -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
-  }
-  100% {
-     text-shadow: 1px 1px #eed2cc, 2px 2px #eed2cc, 3px 3px #eed2cc, 4px 4px #eed2cc, 5px 5px #eed2cc, 6px 6px #eed2cc, 7px 7px #eed2cc, 8px 8px #eed2cc;
-    -webkit-transform: translateX(-8px) translateY(-8px);
-            transform: translateX(-8px) translateY(-8px);
-  }
-}
-@keyframes text-shadow-pop-br {
-  0% {
-    text-shadow: 0 0 #eed2cc, 0 0 #eed2cc, 0 0 #eed2cc, 0 0 #eed2cc, 0 0 #eed2cc, 0 0 #eed2cc, 0 0 #eed2cc, 0 0 #eed2cc;
-    -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
-  }
-  100% {
-    text-shadow: 2px 2px #eed2cc, 3px 3px #eed2cc, 4px 4px #eed2cc, 5px 5px #eed2cc, 6px 6px #eed2cc, 7px 7px #eed2cc, 8px 8px #eed2cc, 9px 9px #eed2cc, 10px 10px #eed2cc;
-    -webkit-transform: translateX(-8px) translateY(-8px);
-            transform: translateX(-8px) translateY(-8px);
-  }
-}
 
-/*** Text Animation FadeInUpBig ***/
-@keyframes fadeInUpBig {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 50vh, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInUpBig {
-  animation-name: fadeInUpBig;
-}
-
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-.animated.delay-2s {
-  animation-delay: 2s;
-}
-
-/** CUBE SIDES **/
-
-@keyframes rotate
-{
-	0% {
-		transform: rotateY(0deg);
-	}
-
-	100%{
-    transform: rotateY(-380deg);
-	}
-}
-
-.front{
-	transform : translateZ(50px) rotateY(0deg) ;
-	background-color: #eed2cc;
-  opacity: 70%;
-}
-.back{
-	transform: rotateY(180deg) translateZ(100px);
-	background-color: #eed2cc;
-  opacity: 70%;
-}
-.left{
-	transform: rotateY(-90deg) translateX(-100px);
-	transform-origin: left;
-	background-color: #eed2cc;
-  opacity: 70%;
-}
-.right{
-	transform: rotateY(90deg) translateX(100px);
-	transform-origin: right;
-	background-color: #eed2cc;
-  opacity: 70%;
-}
-.top{
-	transform: rotateX(-90deg) translateY(-100px);
-	transform-origin: top;
-	background-color: #eed2cc;
-}
-.bottom{
-	transform: rotateX(-90deg) translateY(100px);
-	transform-origin: bottom;
-	background-color: #eed2cc;
-}
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
   .cube-container {
