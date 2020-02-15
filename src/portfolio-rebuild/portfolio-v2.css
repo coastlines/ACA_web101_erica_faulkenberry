@@ -1,65 +1,67 @@
 body {
   font-family: 'Roboto Mono', monospace;
-  display: flex;
-  flex-direction: column;
-  background-color: #4801FF;
-  margin: 0;
-  padding: 0;
 }
 
 .menu {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
   box-sizing: border-box;
+  height: 100vh;
+  background-color: #4801FF;
 }
 
 .cube-container {
-	perspective: 600px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  height: 60vh;
-  width: 40%;
+  align-self: center;
+  perspective: 600px;
+  flex: 1 1 300px;
+  margin: 10px;
+  position: relative;
+  bottom: 40vh;
 }
 
 .cube {
-	animation: rotate 20s linear infinite; 
+  box-sizing: border-box;
+  animation: rotate 20s linear infinite; 
   transform-style: preserve-3d;
-  margin: 3% 3% 3% 5%;
 }
 
 .cube div {
-	position: absolute;
-  height: 200px;
-  width: 200px;
+  box-sizing: border-box;
+  position: absolute;
+  height: 150px;
+  width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font: 5vw;
+  font: 4vw;
   color: #FC716E;
 }
 
 nav {
-  display: flex;
   box-sizing: border-box;
+  display: flex;
   justify-content: flex-end;
-  align-items: center;
-  width: 40%
-  margin-right: 3%;
+  align-items: flex-end;
+  flex: 1 1 300px;
+}
+
+ul {
+  margin: 10px;
 }
 
 li, a {
+  box-sizing: border-box;
   color: #FC716E;
   list-style-type: none;
   text-decoration: none;
   text-transform: uppercase;
   line-height: .9em;
-  font-size: 10vw;
+  font-size: 9vw;
   letter-spacing: .09em;
   font-family: 'Poppins', sans-serif;
 }
@@ -70,6 +72,7 @@ a:hover {
 }
 
 .white {
+  box-sizing: border-box;
   height: 100vh;
   width: 100%;
   background-color: white;
@@ -79,34 +82,53 @@ a:hover {
 }
 
 .white p {
-  height: 60vh;
-  width: 60%;
+  box-sizing: border-box;
   color: #4801FF;
   font-size: 24px;
   line-height: 1.5em;
+  margin: 0 15%;
 }
 
 .blue {
+  box-sizing: border-box;
   height: 100vh;
   width: 100vw;
   background-color: #4801FF;
-  background-image: -webkit-linear-gradient(150deg, #4801FF 55%, #fff 45%);
+  color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .blue p {
+  box-sizing: border-box;
   margin: 4%;
   width: 30%;
 }
 
 .video-container {
+  box-sizing: border-box;
   margin: 30px;
 }
 
 iframe {
+  box-sizing: border-box;
   max-width: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  color: #4801FF;
+}
+
+.fab {
+  color: #4801FF;
+  font-size: 3vw;
+  display: flex;
+  align-self: center;
 }
 
 /*** Nav Animation Shadow **/
@@ -144,7 +166,7 @@ iframe {
 @keyframes fadeInUpBig {
   from {
     opacity: 0;
-    transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 50vh, 0);
   }
 
   to {
@@ -162,8 +184,8 @@ iframe {
   animation-fill-mode: both;
 }
 
-.animated.delay-1s {
-  animation-delay: 1s;
+.animated.delay-2s {
+  animation-delay: 2s;
 }
 
 /** CUBE SIDES **/
@@ -180,7 +202,7 @@ iframe {
 }
 
 .front{
-	transform : translateZ(100px) rotateY(0deg) ;
+	transform : translateZ(50px) rotateY(0deg) ;
 	background-color: #eed2cc;
   opacity: 70%;
 }
@@ -211,3 +233,57 @@ iframe {
 	transform-origin: bottom;
 	background-color: #eed2cc;
 }
+
+@media only screen and (max-width: 768px), (orientation: portrait) {
+  .cube-container {
+    bottom: 0;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  li a {
+    font-size: 13.5vw;
+    line-height: 1.2em;
+  }
+
+  .white p {
+    font-size: 18px;
+  }
+
+  .blue {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .blue p {
+      margin: 5%;
+      width: 100%;
+    }
+    
+  .video-container {
+      margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .menu {
+    flex-wrap: nowrap;
+  }
+
+  .cube-container {
+    align-self: flex-start;
+  }
+  
+  nav {
+    justify-content: flex-end;
+  }
+
+  li a {
+    font-size: 9vw;
+    line-height: .9em;
+  }
+}
+
