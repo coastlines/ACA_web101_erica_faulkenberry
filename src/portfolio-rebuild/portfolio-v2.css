@@ -54,7 +54,7 @@ ul {
   margin: 10px;
 }
 
-li, a {
+nav li, nav a {
   box-sizing: border-box;
   color: #FC716E;
   list-style-type: none;
@@ -106,24 +106,33 @@ a:hover {
   width: 30%;
 }
 
+
+.video-container iframe {
+  box-shadow: 20px 20px #fff;
+}
+
 footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 10vh;
-  color: #4801FF;
 }
 
 footer a {
   display: flex;
   align-self: center;
+  text-decoration: none;
 }
 
 .fab {
-  color: #4801FF;
-  font-size: 3vw;
+  color:  #4801FF;
+  font-size: 30px;
 }
 
+.fab:hover, footer a:hover {
+  -webkit-text-stroke: 0;
+  -webkit-text-fill-color: #FC716E;
+}
 
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
@@ -155,7 +164,7 @@ footer a {
     }
     
   .video-container {
-      margin: 0;
+      margin: 0 15px 0 0 ;
     }
 
 }
