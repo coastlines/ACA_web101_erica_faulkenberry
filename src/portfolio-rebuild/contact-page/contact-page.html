@@ -11,7 +11,7 @@
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-  <header class="header"> 
+ <!-- <header class="header"> 
     <nav>
       <ul class="">
         <li class="">
@@ -44,33 +44,40 @@
         Texas focused on web/mobile experiences.
       </h1>
     </div>
-  </header>
+  </header> -->
   <section class="contact-container">
-  <form action="mailto:efaulkenberry@gmail.com" method="post" class="contact-form">
-    <h1>Let's work together</h1>
+  <div class="back-arrow"><a href="#" alt="Return to homepage"><i class="fas fa-arrow-circle-left"></i></a></div>
+  <form action="mailto:efaulkenberry@gmail.com" method="post" class="contact-form" target="blank">
+    <h1>Get in touch</h1>
+    <fieldset>
+      <label>
+        <span>What is your name?</span>
+        <input type="text" name="name" id="name">
+      </label>
+    </fieldset>
+  <fieldset>
     <label>
-      <span>What is your name?</span>
-      <input type="text" name="name" id="name">
-    </label>
-    <label>
-      <span>Your email</span>
+      <span>Your email <i class="fas fa-hand-point-right"></i></span>
       <input type="email" name="email" id="email">
     </label>
+  </fieldset>
+  <fieldset>
     <label>
-      <span>Add your message here</span>
-      <textarea name="message" id="message-box"></textarea>
-    </label>
-    <label>
-      <span>Subject :</span><select name="selection">
-      <option value="Freelance">Freelance</option>
-      <option value="Job Inquiry">Job Inquiry</option>
-      <option value="General Question">Mystery Question</option>
+      <span>Subject:</span>
+      <select name="selection">
+        <option value="Freelance">Freelance</option>
+        <option value="Job Inquiry">Job Inquiry</option>
+        <option value="General Question">Mystery Question</option>
       </select>
     </label>
-    <button type="submit" value="send" class="submit-button">Send it</button>
+  </fieldset>
+  <fieldset>
     <label>
-      <input type="button" class="button" value="Send" /> 
-    </label> 
+      <span>Add your message here <i class="fas fa-hand-point-down"></i></span><br>
+      <textarea name="message" id="message-box"></textarea>
+    </label>
+  </fieldset>
+    <button type="submit" value="send" class="submit-button">Send it &nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane"></i></button>
   </form>
 </section>
  
