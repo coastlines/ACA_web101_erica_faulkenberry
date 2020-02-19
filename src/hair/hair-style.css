@@ -1,0 +1,648 @@
+body {
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav li, section button, h2, h3 {
+  font-family: 'ddc_hardware_regularregular', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 86px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.h2-footer {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 24px;
+  padding-bottom: 15px;
+  color: #273371;
+}
+
+h4, p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.quotes p {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+li {
+  font-size: 14px;
+  line-height: 60px;
+}
+
+.banner h4 {
+  margin-top: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn {
+  font-weight: 900;
+}
+
+.nav-items li, .nav-items .btn {
+  letter-spacing: .07em;
+  font-weight: 700;
+}
+
+footer li, footer a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+footer a {
+  color: #213072;
+}
+
+/*
+font-family: 'Bungee Shade', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Leckerli One', cursive;
+font-family: 'Montserrat', sans-serif; 
+*/
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-logo-img {
+  width: 150px;
+}
+
+.nav-items {
+  display: flex;
+  text-transform: capitalize;
+  justify-content: flex-end;
+}
+
+.nav-items li {
+  padding: 0 5px;
+}
+
+.link-underline:hover, .link-underline:active {
+  text-decoration: underline;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+section .btn {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.book-btn-nav {
+  background: #000;
+  color: #fff;
+}
+
+.jobs-btn-nav {
+  background: #273371;
+  color: #fff;
+}
+
+.book-btn-nav:hover {
+  color: #ff0;
+}
+
+.jobs-btn-nav:hover {
+  color: #ff0;
+}
+
+section {
+  display: flex;
+}
+
+.banner {
+  background: url("./img/edgar-chaparro-m8UvH75I2lI-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 600px;
+  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  filter: saturate(150%);
+  position: relative;
+  top: 60px;
+}
+
+.banner-buttons-container {
+  margin-top: 25px;
+}
+
+.banner .btn, .column-btn {
+  font-size: 14px;
+  border: 0;
+  margin-top: 7px;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+}
+
+.book-btn-banner {
+  background: #000;
+  color: #fff;
+}
+
+.book-btn-banner:hover {
+  background: #ff0;
+  color: #000;
+}
+
+.jobs-btn-banner, .column-btn {
+  background: #273371;
+  color: #fff;
+}
+
+.jobs-btn-banner:hover, .column-btn:hover {
+  background: #ff0;
+  color: #000;
+}
+
+.main {
+  margin: 80px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.quotes {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-top: 40px;
+  padding: 0 15px;
+}
+
+.quotes p {
+  margin-bottom: 30px;
+}
+
+.endorsement-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 720px;
+  margin-bottom: 30px;
+}
+
+.endorsement-logo-img {
+  max-width: 130px;
+  width: 100%;
+  padding: 10px;
+  filter: invert(30%) saturate(0%) brightness(150%);
+}
+
+.endorsement-logo-img:hover,
+.endorsement-logo-img:focus {
+  filter: invert(0%) saturate(0%) brightness(100%);
+}
+
+.column-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 15px 0;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.img-column, .content-column {
+ width: 100%;
+ min-width: 300px;
+ max-width: 850px;
+ padding: 0 15px;
+}
+
+.img-column img {
+  width: 100%;
+}
+
+.content-column p {
+  margin: 3% 0;
+}
+
+.work-here .img-column {
+  order: 1;
+}
+
+.work-here .content-column {
+  order: 2;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #fff;
+  padding: 15px 15px 30px 15px;
+}
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+  flex-wrap: wrap;
+}
+
+.img-container {
+  padding: 10px;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.img-container img {
+  width: 100%;
+  transition: opacity 1s ease-out;
+}
+
+.img-container img:hover {
+  width: 100%;
+  opacity: 0.8;
+}
+
+footer {
+  background-color: #fff;
+  border-top: 15px solid black;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.footer-inner {
+  width: 100%;
+}
+
+footer a {
+  color: #273371;
+}
+
+footer a:hover, footer a:active {
+  text-decoration: underline;
+}
+
+footer ul {
+  margin-bottom: 22px;
+}
+
+footer li {
+  line-height: 1.7;
+}
+
+.footer-column-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column wrap;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
+}
+
+.footer-logo-img {
+  width: 200px;
+}
+
+.footer-column-2 {
+  border-bottom: 1px solid #000;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 17px;
+}
+
+.footer-column-3 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.footer-column-3 a {
+  padding: 2px 5px;
+}
+
+.footer i {
+  font-size: 18px;
+  padding-right: 5px;
+  padding-bottom: 8px;
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-family: 'Leckerli One', cursive;
+    font-size: 108px;
+  }
+
+  .nav-items li {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .tablet-visible {
+    display: unset;
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .img-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 45%;
+    min-width: 150px;
+    padding: 1%;
+    margin: 0;
+  }
+
+  .img-container img {
+    width: 100%;
+    margin: 0;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .nav-items li {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  
+  .main {
+    margin: 80px auto 0 auto;
+    padding: 0 8.33333333%;
+  }
+
+  .quotes {
+    margin: 40px 0 30px 0;
+  }
+
+  .quotes p {
+    font-size: 22px;
+    line-height: 35px;
+    padding: 0 60px;
+  }
+
+  .endorsement-logos img {
+    max-width: 120px;
+  }
+
+  .column-container {
+    display: flex;
+    margin: 15px -15px;
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .img-column, .content-column {
+    width: 41.66666667%;
+   }
+  
+  .local-biz {
+    padding-bottom: 40px;
+  }
+  
+  .gallery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .img-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 23%;
+    min-width: 150px;
+    padding: 1%;
+    margin: 0;
+  }
+
+  .img-container img {
+    width: 100%;
+    margin: 0;
+  }
+
+  footer {
+    border-top: 15px solid black;
+    padding-top: 0 0 35px 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .footer-inner {
+    padding: 0 15px 0 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-direction: row;
+    height: 180px;
+  }
+
+  .h2-footer {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+   
+  .footer-column-1 {
+    border-bottom: 0;
+    margin: 0;
+    padding: 0 15px 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+
+  .legal {
+    padding-left: 25px;
+  }
+
+  .footer-column-2 {
+    border-left: 1px solid #000;
+    border-bottom: 0;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0 30px 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .footer-column-3 {
+    border-left: 1px solid #000;
+    padding: 0 0 0 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+
+  .footer i {
+    padding-left: 10px;
+  }
+
+  .fa-instagram {
+    margin: 0 2px 0 0;
+  }
+  
+  .fa-facebook-f {
+    margin: 0 6px 0 3px;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .mobile-hidden {
+    display: unset;
+  }
+  
+  .nav-items li {
+    padding: 0 10px;
+   }
+
+   .jobs-btn-nav {
+    display: unset;
+  }
+
+  .quotes {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .column-container {
+    margin: 15px 0px;
+  }
+
+  .img-column, .content-column {
+    width: 45%;
+    min-width: 210px;
+    max-width: 800px;
+   }
+
+   .work-here .img-column {
+    order: 2;
+  }
+  
+  .work-here .content-column {
+    order: 1;
+  }
+
+  .h2-footer {
+    font-size: 32px;
+    font-weight: 450;
+    line-height: 38px;
+  }
+
+  .footer-inner {
+    height: 100%;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { 
+
+  h1 {
+    font-size: 134px;
+  }
+
+  .endorsement-logos {
+    justify-content: space-between;
+  }
+
+  .endorsement-logo-img {
+    padding: 0;
+  }
+
+  .footer-column-1 {
+    display: flex;
+    flex-direction: flex-start;
+    margin-top: 40px;
+  }
+
+  .legal {
+    padding-left: 20px;
+  }
+
+  .nav-items li {
+    padding: 0 15px;
+   }
+
+}
