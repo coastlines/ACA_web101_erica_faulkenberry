@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 10px;
+}
+
+.inner-container div {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.inner-container:hover div:nth-child(odd) {
+  transform: scale(2) translateX(10em) rotate(180deg);
+  transition: 2s ease-in;
+}
+
+.inner-container:hover div:nth-child(even) {
+  transform: scale(.5) translateX(-30em) rotate(-180deg);
+  transition: 2.1s ease-in;
+}
+
+.inner-container div:nth-child(1) {
+  background-color: aquamarine;
+}
+.inner-container div:nth-child(2) {
+  background-color: burlywood;
+}
+.inner-container div:nth-child(3) {
+  background-color: coral;
+}
+.inner-container div:nth-child(4) {
+  background-color: darkcyan;
+}
+.inner-container div:nth-child(5) {
+  background-color: forestgreen;
+}
+.inner-container div:nth-child(6) {
+  background-color: goldenrod;
+}
+.inner-container div:nth-child(7) {
+  background-color: hotpink;
+}
+.inner-container div:nth-child(8) {
+  background-color: indianred;
+}
+.inner-container div:nth-child(9) {
+  background-color: khaki;
+}
+.inner-container div:nth-child(10) {
+  background-color:lightsalmon;
+}
+.inner-container div:nth-child(11) {
+  background-color: mediumseagreen;
+}
+.inner-container div:nth-child(12) {
+  background-color: navajowhite;
+}
