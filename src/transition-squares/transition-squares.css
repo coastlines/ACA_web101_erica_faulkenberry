@@ -11,14 +11,17 @@
   margin: 5px;
 }
 
+div:nth-child(odd), div:nth-child(even) {
+  transform: scale(1) translateX(0em) rotate(0deg);
+  transition: all 2s ease-in;
+}
+
 .inner-container:hover div:nth-child(odd) {
   transform: scale(2) translateX(10em) rotate(180deg);
-  transition: 2s ease-in;
 }
 
 .inner-container:hover div:nth-child(even) {
-  transform: scale(.5) translateX(-30em) rotate(-180deg);
-  transition: 2.1s ease-in;
+  transform: scale(.5) translateX(-35em) rotate(-180deg);
 }
 
 .inner-container div:nth-child(1) {
