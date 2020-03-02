@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+ <!-- <link rel="stylesheet" src="./reset.css"> -->
+  <link rel="stylesheet" href="./ttt.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script defer src="./ttt.js"></script>
+</head>
+<body>
+  <div class="main-container">
+    <div class="board">
+      <div class="row">
+        <div class="clickBox" id="1" onclick="addGamePiece(1)"></div>
+        <div class="clickBox" id="2" onclick="addGamePiece(2)"></div>
+        <div class="clickBox" id="3" onclick="addGamePiece(3)"></div>
+      </div>
+      <div class="row">
+        <div class="clickBox" id="4" onclick="addGamePiece(4)"></div>
+        <div class="clickBox" id="5" onclick="addGamePiece(5)"></div>
+        <div class="clickBox" id="6" onclick="addGamePiece(6)"></div>
+      </div>
+      <div class="row">
+        <div class="clickBox" id="7" onclick="addGamePiece(7)"></div>
+        <div class="clickBox" id="8" onclick="addGamePiece(8)"></div>
+        <div class="clickBox" id="9" onclick="addGamePiece(9)"></div>
+      </div>
+      <button class="oGamePiece player O" onclick="changeMarkerToO()">O</button>
+      <button class="xGamePiece player X" onclick="changeMarkerToX()">X</button>
+    </div>
+  </div>
+</body>
+</html>
