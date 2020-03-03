@@ -7,6 +7,44 @@ header {
   height: 100vh;
   width: 100vw;
   background-color: green;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header-store {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.header-store span {
+  transform: rotate(-90deg);
+}
+
+.header-about {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.header-ingred {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.header-ingred span {
+  transform: rotate(90deg);
+}
+
+.header-locations {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.header-container {
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,7 +58,7 @@ h1 {
 
 h2 {
   font-size: 42px;
-  color: purple;
+  color: #fff;
 }
 
 h3 {
@@ -95,10 +133,24 @@ h3 {
   background-color: hsla(39, 100%, 50%, 1);
 }
 
-.white {
+.ls-3 {
+  letter-spacing: .3rem;
+}
+
+.white-text {
   color: #fff;
-  letter-spacing: .2rem;
   text-transform: uppercase;
+  font-family: "Mostra Nuova W05 Bold";
+  letter-spacing: .2rem;
+}
+
+.purple-text {
+  font-family: "Mostra Nuova W05 Bold";
+  color:  hsla(300, 100%, 25%, 1);
+}
+
+.orange-text {
+  color: hsla(39, 100%, 50%, 1);
 }
 
 article {
@@ -109,7 +161,7 @@ button {
   padding: 30px 60px;
   letter-spacing: .1rem;
   font-family: "Mostra Nuova W05 Bold";
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   border: 0;
 }
