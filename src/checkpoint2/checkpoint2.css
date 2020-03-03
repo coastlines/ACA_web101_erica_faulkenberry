@@ -1,0 +1,108 @@
+@font-face{
+  font-family:"Mostra Nuova W05 Bold";
+  src:url("Fonts/mostranuevabold/8a628a6e-ee84-4337-a409-85484fb4786f.woff2") format("woff2"),url("Fonts/mostranuevabold/51eb8261-5b61-4837-bc8e-ec1b47827621.woff") format("woff");
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-color: green;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Mostra Nuova W05 Bold";
+}
+
+h1 {
+  font-size: 96px;
+  color: orange;
+}
+
+h2 {
+  font-size: 62px;
+}
+
+h3 {
+  font-size: 42px;
+  color: purple;
+}
+
+.flex-col-center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-row-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-sa-center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.m-40 {
+  margin: 40px;
+}
+.pt-pb-40 {
+  padding: 40px 0;
+}
+
+.p-20 {
+  padding: 30px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.purple-bg {
+  background-color: hsla(300, 100%, 25%, 1);
+}
+
+.green-bg {
+  background-color: green;
+}
+
+.blue-bg {
+  background-color: hsla(219, 100%, 40%, 1);
+}
+
+.orange-bg {
+  background-color: hsla(39, 100%, 50%, 1);
+}
+
+.white {
+  color: #fff;
+}
+
+article {
+  max-width: 300px;
+}
+
+
+
+
+
