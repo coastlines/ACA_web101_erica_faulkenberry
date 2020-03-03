@@ -48,7 +48,13 @@ header {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Mostra Nuova W05 Bold";
+  font-family: "Mostra Nuova W05 Bold", sans-serif;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 h1 {
@@ -151,6 +157,10 @@ h3 {
 
 .orange-text {
   color: hsla(39, 100%, 50%, 1);
+}
+
+.article-link {
+  color: #000;
 }
 
 article {
