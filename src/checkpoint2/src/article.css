@@ -109,3 +109,12 @@ blockquote {
 .footer-a3 {
   background-color: hsla(219, 100%, 40%, 1);
 }
+
+@media only screen and (max-width: 620px) {
+  
+  .header-banner-text h1 {
+    font-size: 11vw;
+  }
+
+
+}
