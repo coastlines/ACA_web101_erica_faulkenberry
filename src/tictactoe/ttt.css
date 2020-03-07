@@ -1,0 +1,48 @@
+.main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 5em;
+}
+
+.board {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.clickBox {
+  height: 100%;
+  width: 100%;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gamePiece {
+ background-color: green;
+}
+
+.oGamePiece {
+  color: pink;
+}
+
+.xGamePiece {
+  color: purple;
+}
+
