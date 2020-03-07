@@ -272,6 +272,15 @@ input[type="checkbox"] {
     color: #fff;
 }
 
+#newItemButton {
+    display: none;
+}
+
+#add {
+    background-color: transparent;
+    border: none;
+}
+
 @media screen and (max-width: 1099px) {
     /* 300px 1fr 450px 1fr 280px   */
     main.main-container {

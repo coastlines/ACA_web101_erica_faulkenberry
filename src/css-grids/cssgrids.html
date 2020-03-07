@@ -102,17 +102,22 @@
                 </div>
             </div>
         </div>
-        <div class="todo">
+        <div class="todo" id="list_section">
           <h2>Today's To-Do</h2>
           <ul>
-              <li><input type="checkbox">Make breakfast</li>
-              <li><input type="checkbox">Feed the pets</li>
-              <li><input type="checkbox">Finish building dashboard</li>
+              <li class="item"><input type="checkbox">Make breakfast</li>
+              <li class="item"><input type="checkbox">Feed the pets</li>
+              <li class="item"><input type="checkbox">Finish building dashboard</li>
           </ul>
-          <div class="add-new-item">
-            <input type="text" id="myInput" placeholder="Add new todo"><i class="fas fa-plus addBtn"></i>
-          </div>
+          <div id="newItemButton"><button href="#">new item</button></div>
+          <form id="newItemForm" class="add-new-item">
+            <input type="text" id="itemField" placeholder="Add new todo">
+            <button id="add" type="submit"><i class="fas fa-plus addBtn"></i></button>
+          </form>
+        </div>
       </div>
     </main>
 </body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='./dashboard.js'></script>
 </html>
