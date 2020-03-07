@@ -1,0 +1,271 @@
+@font-face{
+  font-family:"Mostra Nuova W05 Bold";
+  src:url("Fonts/mostranuevabold/8a628a6e-ee84-4337-a409-85484fb4786f.woff2") format("woff2"),url("Fonts/mostranuevabold/51eb8261-5b61-4837-bc8e-ec1b47827621.woff") format("woff");
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header-store {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.header-store span {
+  transform: rotate(-90deg);
+}
+
+.header-about {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.header-ingred {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.header-ingred span {
+  transform: rotate(90deg);
+}
+
+.header-locations {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.header-main-container {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Mostra Nuova W05 Bold", sans-serif;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 10vw;
+  color: orange;
+}
+
+h2 {
+  font-size: 4vw;
+  color: #fff;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+.flex-col-center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-col-center-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-row-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-sa-center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.m-40 {
+  margin: 40px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.pt-pb-40 {
+  padding: 40px 0;
+}
+
+.p-20 {
+  padding: 30px;
+}
+
+.pl-pr-20 {
+  padding: 0 20px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.purple-bg {
+  background-color: hsla(300, 100%, 25%, 1);
+}
+
+.green-bg {
+  background-color: green;
+}
+
+.blue-bg {
+  background-color: hsla(219, 100%, 40%, 1);
+}
+
+.orange-bg {
+  background-color: hsla(39, 100%, 50%, 1);
+}
+
+.ls-3 {
+  letter-spacing: .3rem;
+}
+
+.white-text {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Mostra Nuova W05 Bold";
+  letter-spacing: .2rem;
+}
+
+.purple-text {
+  font-family: "Mostra Nuova W05 Bold";
+  color:  hsla(300, 100%, 25%, 1);
+}
+
+.orange-text {
+  color: hsla(39, 100%, 50%, 1);
+}
+
+.article-link {
+  color: #000;
+}
+
+article {
+  max-width: 300px;
+}
+
+.btn {
+  padding: 30px 60px;
+  letter-spacing: .1rem;
+  font-family: "Mostra Nuova W05 Bold";
+  font-size: 20px;
+  text-transform: uppercase;
+  color: hsla(39, 100%, 50%, 1);
+  border: 2px solid hsla(39, 100%, 50%, 1);
+  border-radius: 3px;
+  background-color: green;
+  transition: 1s;
+}
+
+.btn:hover {
+  background-color: hsla(39, 100%, 50%, 1);
+  color: hsla(300, 100%, 25%, 1);
+  font-size: 22px;
+}
+
+a.middle
+{
+    position: relative;
+}
+
+a.middle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a.middle:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.article-link {
+  width: calc(100%);
+  background-image: linear-gradient(transparent calc(100% - 8px), black 10px);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 1s;
+}
+
+article h3:hover .article-link {
+  background-size: 100% 100%;
+}
+
+footer .fab {
+  font-size: 24px;
+  color: hsla(39, 100%, 50%, 1);
+  transition: 250ms;
+}
+
+footer .fab:hover {
+  transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 620px) {
+  .header-ingred, .header-store {
+    display: none;
+  }
+  h1 {
+    font-size: 15vw;
+  }
+  h2 {
+    font-size: 9vw;
+  }
+  .btn {
+    padding: 30px;
+  }
+
+}
