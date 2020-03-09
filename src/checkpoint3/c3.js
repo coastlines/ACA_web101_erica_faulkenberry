@@ -3,8 +3,10 @@ var numberOfRaindrops = 500;
 var showerPower = 0;
 
 // hide bonus cactus and rain
-$('.cactus-1, .cactus-3, #rain, .h1-end').hide();
-$('audio#music')[0].play();
+$( document ).ready(function() {
+  $('.cactus-1, .cactus-3, #rain, .h1-end').hide();
+  $('audio#music')[0].play();
+});
 
 // generate a random number within a range
 function randomNumInRange( min, max ) {
