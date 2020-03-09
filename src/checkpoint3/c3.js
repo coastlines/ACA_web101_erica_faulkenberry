@@ -4,7 +4,6 @@ var showerPower = 0;
 
 // hide bonus cactus and rain
 $('.cactus-1, .cactus-3, #rain, .h1-end').hide();
-
 $('audio#music')[0].play();
 
 // generate a random number within a range
@@ -28,6 +27,7 @@ function createRain() {
 
 $('.cactus-container').click(function () {
   $('.cactus-2').addClass('pulse');
+  $('audio#cactus-poke')[0].play();
     $('.cactus-2').on(
       "webkitAnimationEnd oanimationend msAnimationEnd animationend",
       function() {
@@ -43,6 +43,8 @@ $(".cactus-container").click(function() {
 
 $(".cactus-container").click(function () {
   $('#rain').show();
+  $("#cactus-poke").trigger('load');
+  $('#cactus-poke')[0].play();
     if (showerPower > 15) {
       $('#rain').hide();
       $('.puff-6').css({
@@ -166,8 +168,6 @@ $(".cactus-container").click(function () {
 $(".cactus-container").click(function () {
   $('#rain').slideDown()
 });
-
-
 
 // create the rain
 createRain();

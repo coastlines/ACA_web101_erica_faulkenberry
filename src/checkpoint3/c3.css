@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 120%;
   width: 100%;
 }
 
@@ -140,6 +140,10 @@ h1 {
 /*** Audio Control ***/
 
 audio {
-  width: 150px;
-  padding-bottom: 40px;
+  width: 300px;
+  padding-bottom: 0px;
+}
+
+audio {
+  visibility: hidden;
 }
